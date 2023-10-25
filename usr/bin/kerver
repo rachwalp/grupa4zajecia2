@@ -16,4 +16,4 @@ for disk in /sys/block/*/; do
     fi
 done
 echo -e "\nCheck available schedulers:\n"
-journalctl -k | grep -i scheduler
+journalctl --output cat -k | grep -i scheduler
